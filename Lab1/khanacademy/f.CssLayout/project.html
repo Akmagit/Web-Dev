@@ -18,6 +18,7 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
         }
 
         h1, h2 {
@@ -56,7 +57,20 @@
         }
         #pic{
             float:right;
-            margin:50px;
+            margin:1px;
+            z-index:1;
+            position:absolute;
+            top:190px;
+            right:450px;
+        }
+        .j{
+            background-color:bisque;
+            border:1px solid black;
+            float:right;
+            z-index:2;
+            position:absolute;
+            top:150px;
+            right:450px;
         }
     </style>
 </head>
@@ -66,7 +80,7 @@
     <h2>To My 20th Birthday Party!</h2>
     <img id="pic" src="https://w.forfun.com/fetch/8a/8a5afe9354e7daae251bae1acf504849.jpeg"width="200"/>
     <div class="info">
-        <em>August 14, 2025</em>
+        <em class="j">August 14, 2025</em>
         <p><strong>The Details:</strong></p>
         <ul>
             <li>At 5 o'clock in the afternoon</li>
