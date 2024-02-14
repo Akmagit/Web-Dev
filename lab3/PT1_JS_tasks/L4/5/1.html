@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      let obj = {};
+
+      function A() {
+        return obj;
+      }
+      function B() {
+        return obj;
+      }
+
+      alert(new A() == new B()); // true
+    </script>
+  </head>
+  <body></body>
+</html>

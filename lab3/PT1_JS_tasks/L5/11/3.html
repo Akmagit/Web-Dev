@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      function getLocalDay(date) {
+        let day = date.getDay();
+        if (day == 0) {
+          // sun = 7
+          day = 7;
+        }
+        return day;
+      }
+      let myDate = new Date(2012, 0, 3); // 3 Jan 2012
+      alert(getLocalDay(myDate)); // tuesday, should show 2
+    </script>
+  </head>
+  <body></body>
+</html>

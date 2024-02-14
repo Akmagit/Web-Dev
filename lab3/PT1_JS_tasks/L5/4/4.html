@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      function sumInput() {
+        let myArray = [];
+
+        while (true) {
+          let value = prompt("Enter a number:", 0);
+          if (value === "" || value === null || !isFinite(value)) break;
+          myArray.push(+value);
+        }
+
+        let sumi = 0;
+        for (let number of myArray) {
+          sumi += number;
+        }
+        return sumi;
+      }
+
+      alert(sumInput());
+    </script>
+  </head>
+  <body></body>
+</html>

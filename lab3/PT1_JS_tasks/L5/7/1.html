@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      function unique(myArr) {
+        return Array.from(new Set(myArr));
+      }
+
+      let values = [
+        "Hare",
+        "Krishna",
+        "Hare",
+        "Krishna",
+        "Krishna",
+        "Krishna",
+        "Hare",
+        "Hare",
+        ":-O",
+      ];
+
+      alert(unique(values)); // Hare,Krishna,:-O
+    </script>
+  </head>
+  <body></body>
+</html>
