@@ -1,0 +1,60 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  flex-wrap: wrap;    /*won't get out of the borders*/
+  row-gap: 15px;
+  justify-content: center;
+}
+
+.albumsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 280px;
+  height: 340px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.albumsContainer img{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.albumsContainer .deleteAlbum{
+  width: 25px;
+  height: 20px;
+  margin-left: 200px;
+}
+
+.deleteAlbum:hover{
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+}
+
+.albumsContainer button{
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px;
+  background: lime;
+  border: none;
+  border-radius: 16px;
+  margin: auto;
+}
+
+.albumsContainer button:hover{
+  border: 1px solid chartreuse;
+  cursor: pointer;
+}

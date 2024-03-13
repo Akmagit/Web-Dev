@@ -1,0 +1,14 @@
+<div class="photoBox">
+  <div class="cont">
+    <img src="https://i.pinimg.com/564x/80/59/e2/8059e25af3bccce85e99b032f7c8e64e.jpg" class="back" (click)="goToAlbum()">
+    <p>Go to Album</p>
+  </div>
+  <div class="photos">
+    <div class="photos_item" *ngFor="let photo of photos">
+      <p class="photos_item_title">
+        {{photo.title}}
+      </p>
+      <img class="photos_item_thumbnail" src="{{photo.thumbnailUrl}}">
+    </div>
+  </div>
+</div>

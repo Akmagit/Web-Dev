@@ -1,0 +1,19 @@
+<div class="detail">
+  <img class="imageBack" src="https://i.pinimg.com/564x/80/59/e2/8059e25af3bccce85e99b032f7c8e64e.jpg" (click)="goBack()">
+  <div class="box" *ngIf="isEdit===false">
+    <p class="title" (click)="goToPhotos(album.id)">
+      Title: {{album.title}}
+    </p>
+
+    <button class="button" (click)="edit()">
+      Edit
+    </button>
+  </div>
+  <div class="container_change" *ngIf="isEdit===true">
+    <input class="boxes" [(ngModel)]="editableText" type="text">
+    <button class="container_change_but2" (click)="save()">
+      Save
+    </button>
+  </div>
+  <img src="https://i.pinimg.com/564x/17/8b/4c/178b4cad2e7556c2ae25e0084cfdd159.jpg">
+</div>

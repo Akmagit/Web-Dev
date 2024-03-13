@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngFor="let album of albums; let i=index" class="albumsContainer">
+    <img src="https://i.pinimg.com/564x/07/33/0b/07330b37741337ace891d483cc7cb42c.jpg" class="deleteAlbum" (click)="removeAlbum(i)">
+    <img src="https://i.pinimg.com/564x/17/8b/4c/178b4cad2e7556c2ae25e0084cfdd159.jpg" class="images">
+    <p class="title">
+      {{album.title}}
+    </p>
+    <button (click)="goToPage(album.id)">
+      More
+    </button>
+  </div>
+</div>

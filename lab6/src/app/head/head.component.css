@@ -1,0 +1,20 @@
+.head{
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  background: hotpink;
+  column-gap: 26px;
+  padding-right: 50px;
+  height: 80px;
+}
+
+.head img{
+  width: 36px;
+  height: 34px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.head img:hover{
+  cursor: pointer;
+}
